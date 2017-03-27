@@ -6,5 +6,11 @@ def draw_board(bf)
 
 end 
 
-
+def fill_field(bf, ef)
+  bf.each do |key, value|
+    if value != " " 
+      ef.delete(key)
+    end
+  end
+end
 
